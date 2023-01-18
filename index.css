@@ -1,0 +1,154 @@
+:root {
+    --font: "Raleway",sans-serif;
+      --background-color: #fff;
+      --background-color-header: #e9ecef;
+      --color-text: #000;
+      --color-text-header: #000;
+    --color-green: #01d099;
+    --color-red: #f64e60;
+    --color-yellow: #ffa800;
+  
+    --primary-font-size: 12px;
+    --secondary-font-size: 10px;
+    --header-font-size: 13px;
+    --svg-font-size: 8px; /* Only for icon-svg */
+  
+    --border-bottom: 0px solid var(--background-color-header); /* 0px for no border */
+    --primary-padding: 3px 3px;
+    --primary-line-height: 15px;
+    --secondary-padding: .4rem; /* For Headers Only */
+  
+    --button-info-font-size: 9px ;/* Only for info button */
+    --button-info-line-height: 16px ; /* Only for info button */
+  
+    /* LIVESCORE, FIXTURES & FIXTURE WIDGETS ONLY */
+    --modale-background-overlay: rgba(0,0,0,0.4); /* Only for modale */
+    --modale-close-size: 28px; /* Only for the close button in the modale */
+    --modale-elapsed-time: 12px; /* Only for elapsed time in the modale or FIXTURE widget */
+    --modale-teams-name: 18px; /* Only for Teams Name in the modale or FIXTURE widget */
+    --modale-teams-name-small: 12px; /* Only for Teams Name in the modale or FIXTURE widget <480px */
+    --modale-teams-name-line-height: 20px; /* Only for Teams Name in the modale or FIXTURE widget */
+    --modale-score: 40px; /* Only for Score in the modale or FIXTURE widget >480px */
+    --modale-score-small: 20px; /* Only for Score in the modale or FIXTURE widget <480px */
+    --modale-players-grid-line-height: 20px; /* Only for players on the lineups grid in the modale or FIXTURE widget */
+    --modale-players-grid-line-height-small: 15px; /* Only for players on the lineups grid in the modale or FIXTURE widget <480px */
+    --modale-players-grid-line-height-large: 25px; /* Only for players on the lineups grid in the modale or FIXTURE widget >1024px */
+  
+    /* STANDINGS WIDGET ONLY */
+    --standings-team-form-font-size: 9px; /* Only for team form and info button */
+    --standings-team-form-line-height: 16px;
+  
+    /* LOGOS / FLAGS / PHOTOS */
+    --flags-size: 28px;
+    --teams-logo-size: 30px;
+    --teams-logo-size-large: 100px; /* Only in the modale or FIXTURE widget */
+    --teams-logo-size-medium: 50px; /* Only in the modale or FIXTURE widget <480px */
+    --teams-logo-border: 0px solid var(--background-color-header); /* 0px for no border, Only in the modale or FIXTURE widget */
+    --player-photo: 15px;  /* Only in the modale or FIXTURE widget */
+    --player-photo-large: 30px;  /* Only in the modale or FIXTURE widget <480px */
+  }
+  
+  *{
+    --background-color: #00141e;
+      --background-color-header: #0f2d37;
+      --color-text: #fff;
+      --color-text-header: #ffcd00;
+      --header-font-size: 13px;
+      --flags-size: 28px;
+      --teams-logo-size: 30px;
+      --border-bottom: 0px solid var(--background-color-header);
+      --primary-font-size: 12px;
+      --primary-line-height: 15px;
+      --secondary-padding: .4rem;
+  
+      --modale-teams-name: 16px;
+      --teams-logo-border: 0px solid var(--background-color-header);
+      --modale-score: 40px;
+  }
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    
+    
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  
+  
+  
+  
+  /* CSS */
+  .dropbtn {
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+  }
+  
+  .dropbtn:hover,
+  .dropbtn:focus {
+    opacity: .75;
+  }
