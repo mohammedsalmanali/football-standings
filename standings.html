@@ -3,13 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-             <link rel="icon" type="image/x-icon" href="soccer_field.png">
+        <link rel="stylesheet" href="standings.css">
+        <title>Live Standings</title>
+        <link rel="icon" type="image/x-icon" href="football.png">
     </head>
     <body> 
         <div class="container">
             <div class="header" style="float: left;"><h2 id="title">⚽Football Live Standings</h2></div>
-            
+            <div>
+                <a href="./results.html"><button class="dropbtn" style="margin-top: 10px;">Results</button></a>
+            </div>
             <div class="dropdown" style="padding-right: 10px; padding-top:10px; padding-bottom:10px">
                 <button class="dropbtn">Select League</button>
                 <div class="dropdown-content">
@@ -29,7 +32,7 @@
 
         <div id="wg-api-football-standings"
             data-host="v3.football.api-sports.io"
-            data-key=""
+            data-key="58d3b625501d0b412bfc0ac7173bbb85"
             data-league="39"
             data-team=""
             data-season="2022"

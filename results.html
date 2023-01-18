@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Results</title>
+        <link rel="icon" type="image/x-icon" href="football.png">
+        <link rel="stylesheet" href="results.css"
+    </head>
+    <body>
+        <div class="container">
+            <div class="header" style="float: left;"><h2 id="title">⚽Football Live Standings</h2></div>
+            <div>
+                <a href="./standings.html"><button class="dropbtn">Standings</button></a>
+            </div>
+            
+     </div>
+        <div id="wg-api-football-fixtures"
+                    data-host="v3.football.api-sports.io"
+                    data-refresh="60"
+                    data-date="2022-02-11"
+                    data-key="58d3b625501d0b412bfc0ac7173bbb85"
+                    data-theme=""
+                    data-show-errors="false"
+                    class="api_football_loader">
+        </div>
+        <script
+                    type="module"
+                    src="https://widgets.api-sports.io/football/1.1.8/widget.js">
+                </script>
+    </body>
+</html>
