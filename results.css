@@ -234,6 +234,11 @@ If we open the api-football.css file the first class named :root{} contains all 
     justify-content: space-between;
   }
   
+  .image{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
   /* Dropdown Button */
   .dropbtn {
     background-color: #04AA6D;
